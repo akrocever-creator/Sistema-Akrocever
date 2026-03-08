@@ -322,6 +322,34 @@
       height: 45px;
     }
 
+    /* Estilos solo para el nuevo botón (sin afectar nada más) */
+    .quienes-somos-container {
+      text-align: center;
+      margin: 20px auto 45px;
+    }
+
+    .btn-quienes-somos {
+      display: inline-block;
+      background: #003f5c;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      padding: 5px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(0, 63, 92, 0.35);
+      transition: all 0.3s ease;
+    }
+
+    .btn-quienes-somos:hover {
+      background: #004b6e;
+      transform: translateY(-2px);
+      box-shadow: 0 7px 20px rgba(0, 63, 92, 0.5);
+    }
+
     /* RESPONSIVE */
     @media (min-width: 640px) {
       .dashboard { grid-template-columns: repeat(2, 1fr); }
@@ -358,6 +386,10 @@
         width: 38px;
         height: 38px;
       }
+      .btn-quienes-somos {
+        font-size: 0.95rem;
+        padding: 12px 32px;
+      }
     }
   </style>
 </head>
@@ -380,6 +412,14 @@
         <a href="#"><img src="https://i.ibb.co/G44M4tvp/Picsart-26-03-06-04-21-31-074.jpg" alt="Imagen introductoria"></a>
       </div>
     </div>
+
+    <!-- Botón agregado aquí ↓↓↓ -->
+    <div class="quienes-somos-container">
+      <a href="https://sites.google.com/view/akrocever/sistema" class="btn-quienes-somos" target="_blank" rel="noopener noreferrer">
+        QUIÉNES SOMOS
+      </a>
+    </div>
+    <!-- ↑↑↑ Botón agregado aquí -->
 
     <h2 class="section-title">PUESTOS DISPONIBLES</h2>
 
@@ -484,8 +524,8 @@
         </div>
       </div>
 
-            <!-- COPAMEX -->
-      <div class="card" style="animation-delay: 0.2s;">
+      <!-- COPAMEX -->
+      <div class="card" style="animation-delay: 0.3s;">
         <div class="card-header">🟢 COPAMEX</div>
         <div class="card-body">
           <div class="desc">
