@@ -476,10 +476,10 @@
     </div>
 
 <div class="quienes-somos-container">
-  <a href="https://sites.google.com/view/akrocever/sistema"
+  <a href="https://sites.google.com/view/akrocever/sistema" 
      class="btn-quienes-somos" 
-     target="_blank"
-    rel="noopener noreferrer"
+     target="_blank" 
+     rel="noopener noreferrer">
     Quiénes somos
   </a>
 </div>
@@ -1347,10 +1347,44 @@
     </a>
 
     <div class="wa-info-bubble" id="waBubble">
-      Para más información y agendar cita da clic al ícono de WhatsApp
+      Para más información da clic al ícono de WhatsApp
     </div>
 
-</div>
-  
+  </div>
+
+  <script>
+    // Script para la burbuja (con delay por si el contenido es dinámico en algunos casos)
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const bubble = document.getElementById('waBubble');
+        if (!bubble) return;
+
+        if (window.innerWidth > 1024) {
+          bubble.classList.add('visible');
+          return;
+        }
+
+        const verButtons = document.querySelectorAll('.btn-ver-vacante');
+
+        function updateBubbleVisibility() {
+          let algunaExpandida = false;
+          verButtons.forEach(btn => {
+            const detalles = btn.nextElementSibling;
+            if (detalles && detalles.style.display === 'block') {
+              algunaExpandida = true;
+            }
+          });
+          bubble.classList.toggle('visible', algunaExpandida);
+        }
+
+        verButtons.forEach(btn => {
+          btn.addEventListener('click', updateBubbleVisibility);
+        });
+
+        updateBubbleVisibility();
+      }, 800);  // Delay corto para asegurar que el DOM esté listo
+    });
+  </script>
+
 </body>
-</html>
+                                                                                                           </html>
