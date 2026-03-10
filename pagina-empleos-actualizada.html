@@ -521,10 +521,6 @@
 
     <div class="section-title">EMPRESAS</div>
 
-<div id="contador-empresas" style="text-align: center; margin-bottom: 20px; font-size: 1.1rem; color: #004080; font-weight: 600;">
-  Empresas activas con vacantes: <span id="numero-empresas">0</span>
-</div>
-
     <div class="dashboard">
 
         <!-- AISIN -->
@@ -1389,45 +1385,6 @@
       }, 800);  // Delay corto para asegurar que el DOM esté listo
     });
   </script>
-
-<script>
-// Función principal para contar tarjetas
-function contarEmpresas() {
-  // Busca todas las tarjetas .card dentro de .dashboard
-  const tarjetas = document.querySelectorAll('.dashboard .card');
-  const contador = document.getElementById('numero-empresas');
-
-  console.log('Buscando tarjetas... Encontradas:', tarjetas.length);
-
-  if (contador) {
-    contador.textContent = tarjetas.length;
-    console.log('Contador actualizado a:', tarjetas.length);
-  } else {
-    console.warn('No se encontró el <span id="numero-empresas">');
-  }
-
-  // Si quieres plural: "1 empresa" o "5 empresas"
-  // contador.textContent = tarjetas.length + (tarjetas.length === 1 ? ' empresa' : ' empresas');
-}
-
-// Ejecutar varias veces con diferentes tiempos (por si el fetch es lento)
-window.addEventListener('load', () => {
-  setTimeout(contarEmpresas, 1000);
-  setTimeout(contarEmpresas, 2000);
-  setTimeout(contarEmpresas, 3000);
-  setTimeout(contarEmpresas, 5000); // extra seguridad
-});
-
-// Si usas fetch, pon esto DENTRO del .then después de innerHTML = html
-/*
-fetch(...)
-  .then(html => {
-    document.getElementById('contenido-empleos').innerHTML = html;
-    setTimeout(contarEmpresas, 1500);
-    setTimeout(contarEmpresas, 3000);
-  });
-*/
-</script>
 
 </body>
                                                                                                            </html>
