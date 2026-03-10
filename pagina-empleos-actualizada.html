@@ -447,56 +447,141 @@
       </div>
     </div>
 
-    <div class="section-title">PUESTOS DISPONIBLES</div>
+    <h2 class="section-title">PUESTOS DISPONIBLES</h2>
 
     <div class="puestos-container">
       <div class="puestos-columns">
         <div class="puestos-column">
           <ul>
-            <li>Operadores de producción</li>
-            <li>Operadores de calidad</li>
-            <li>Operadores de almacén y logística</li>
-            <li>Auxiliares de producción</li>
-            <li>Inspectores de calidad</li>
+            <li>Ayudante general</li>
+            <li>Producción Ensamble</li>
+            <li>Inyección de plástico</li>
+            <li>Operador de máquina</li>
+            <li>Extrusor o inyección</li>
+            <li>Auxiliar de centro de distribución</li>
+            <li>Limpieza</li>
+            <li>Guardias de seguridad</li>
+            <li>Inspector de calidad</li>
+            <li>Calidad visual</li>
           </ul>
         </div>
         <div class="puestos-column">
           <ul>
-            <li>Encargados de turno</li>
-            <li>Técnicos de mantenimiento</li>
-            <li>Choferes con licencia federal</li>
-            <li>Personal de limpieza industrial</li>
-            <li>Ayudantes generales</li>
+            <li>Almacenista</li>
+            <li>Materialista</li>
+            <li>Montacarguista</li>
+            <li>Técnico en Mantenimiento</li>
+            <li>Técnico electromecánico</li>
+            <li>Mantenimiento eléctrico</li>
+            <li>Soldadura autógena</li>
+            <li>Soldador</li>
+            <li>Ayudante de soldador</li>
+            <li>Pintor</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="section-title">VACANTES POR ZONA</div>
+    <div class="section-title">EMPRESAS</div>
 
     <div class="dashboard">
-      <!-- Aquí van tus tarjetas reales. Si no las tienes en este archivo, las puedes agregar después -->
-      <!-- Ejemplo de una tarjeta (agrega las tuyas) -->
-      <div class="card">
-        <div class="card-header">📍 Ciénega de Flores</div>
+
+        <!-- ALCO -->
+      <div class="card" style="animation-delay: 1.0s;">
+        <div class="card-header">🟢 ALCO</div>
         <div class="card-body">
-          <div class="desc"><p>Operadores varios y ayudantes generales.</p></div>
+          <div class="desc">
+            <p>Dedicada al procesamiento de alimentos principalmente al empacado de productos de pollo...</p>
+            <p>LUNES A VIERNES / TURNOS ROTATIVOS / 8 HRS.</p>
+            <p>📍 Ciénega de Flores.</p>
+          </div>
           <div class="vacantes">
             <div class="vacantes-box">
               <div class="vacantes-title">VACANTES DISPONIBLES:</div>
-              Operadores de producción, Calidad y almacén.
+              Ayudante general.
             </div>
-          </div>
-          <button class="btn-ver-vacante" onclick="let det=this.nextElementSibling; det.style.display=(det.style.display==='block')?'none':'block'; this.textContent=(this.textContent==='Ver vacante')?'Ocultar detalles':'Ver vacante';">
-            Ver vacante
-          </button>
-          <div class="info-expandida">
-            Detalles de sueldo, horarios, requisitos...
+            <button class="btn-ver-vacante" 
+                    onclick="let det=this.nextElementSibling; 
+                            det.style.display=(det.style.display==='block')?'none':'block'; 
+                            this.textContent=(this.textContent==='Ver vacante')?'Ocultar detalles':'Ver vacante';">
+              Ver vacante
+            </button>
+            <div class="info-expandida">
+              <ul>
+                <li><strong>Requisitos:</strong> Hombres y mujeres /18 a 50 años, Escolaridad primaria, NO se necesita experiencia.</li>
+                <li><strong>Sueldo semanal:</strong> $2,569</li>
+                <li><strong>Ofrecemos:</strong> Comedor subsidiado, transporte, Tiempo extra, Bonos, prestaciones de ley...</li>
+                <li>Se aceptan extranjeros, Tu ingreso es al siguiente día.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Agrega más tarjetas aquí si las tienes -->
+<!-- BELDEN -->
+      <div class="card" style="animation-delay: 1.0s;">
+        <div class="card-header">🟢 BELDEN</div>
+        <div class="card-body">
+          <div class="desc">
+            <p>Producción de componentes electrónicos, conectores y cables para la industria de la comunicación, redes y seguridad...</p>
+            <p>LUNES A VIERNES / TURNOS FIJOS A ELEGIR / 8 HRS.</p>
+            <p>📍 San Nicolás de los Garza.</p>
+          </div>
+          <div class="vacantes">
+            <div class="vacantes-box">
+              <div class="vacantes-title">VACANTES DISPONIBLES:</div>
+              Ayudante general.
+            </div>
+            <button class="btn-ver-vacante" 
+                    onclick="let det=this.nextElementSibling; 
+                            det.style.display=(det.style.display==='block')?'none':'block'; 
+                            this.textContent=(this.textContent==='Ver vacante')?'Ocultar detalles':'Ver vacante';">
+              Ver vacante
+            </button>
+            <div class="info-expandida">
+              <ul>
+                <li><strong>Requisitos:</strong> Hombres y mujeres /18 a 55 años, Escolaridad primaria, NO se necesita experiencia.</li>
+                <li><strong>Sueldo semanal:</strong> $2,179 libres</li>
+                <li><strong>Ofrecemos:</strong> Vales de despensa, Bonos, prestaciones de ley...</li>
+                <li>Tu ingreso es al siguiente día.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+               <!-- BREMBO APODACA-->
+      <div class="card" style="animation-delay: 1.0s;">
+        <div class="card-header">🟢 BREMBO APODACA</div>
+        <div class="card-body">
+          <div class="desc">
+            <p>Mecanizado de discos de freno para automóviles. Producción enfocada en componentes metálicos para el sector automotriz...</p>
+            <p>LUNES A SÁBADO / TURNOS ROTATIVOS / DIA, TARDE, NOCHE / 8 HRS.</p>
+            <p>📍 Apodaca.</p>
+          </div>
+          <div class="vacantes">
+            <div class="vacantes-box">
+              <div class="vacantes-title">VACANTES DISPONIBLES:</div>
+              Operador de producción.
+            </div>
+            <button class="btn-ver-vacante" 
+                    onclick="let det=this.nextElementSibling; 
+                            det.style.display=(det.style.display==='block')?'none':'block'; 
+                            this.textContent=(this.textContent==='Ver vacante')?'Ocultar detalles':'Ver vacante';">
+              Ver vacante
+            </button>
+            <div class="info-expandida">
+              <ul>
+                <li><strong>Requisitos:</strong> Hombres / 18 a 50 años, Secundaria terminada, Experiencia 6 meses.</li>
+                <li><strong>Sueldo semanal:</strong> $2,457</li>
+                <li><strong>Ofrecemos:</strong> Comedor subsidiado, transporte, Bonos, prestaciones de ley y más beneficios...</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
 
     <a href="https://wa.me/528117967047?text=Hola%2C%20me%20interesa%20una%20vacante" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
