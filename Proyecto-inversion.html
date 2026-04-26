@@ -19,16 +19,16 @@
 
     body {
       font-family: 'Lexend', sans-serif;
-      font-size: 6px;
+      font-size: 16px;
       line-height: var(--lexend-line-height);
     }
 
     h1, h2, h3, h4 { 
       font-family: 'Orbitron', sans-serif; 
       letter-spacing: 0.5px;
-      line-height: 1.1;
+      line-height: 1.0;
     }
-    
+   
     /* Control específico y fuerte para párrafos y textos con Lexend */
     .lexend-paragraph {
       font-family: 'Lexend', sans-serif;
@@ -39,6 +39,59 @@
     .lexend-tight   { --lexend-line-height: 1.25; line-height: 1.25; }
     .lexend-normal  { --lexend-line-height: 1.45; line-height: 1.45; }
     .lexend-relaxed { --lexend-line-height: 1.65; line-height: 1.65; }
+
+    /* Estilos específicos para las tarjetas de inversión */
+    .plan-card {
+      border: 4px solid #3f94c2; /* Color azul del borde */
+      background-color: white;
+      border-radius: 0px; /* Son cuadradas según la imagen */
+      overflow: hidden;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    .plan-header {
+      background-color: #3f94c2;
+      color: white;
+      padding: 15px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .plan-body {
+      padding: 20px;
+      color: #000;
+      font-family: 'Lexend', sans-serif;
+    }
+
+    .plan-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+
+    .plan-label {
+      font-weight: 500;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    .plan-dots {
+      flex-grow: 1;
+      border-bottom: 2px dotted #94a3b8;
+      margin: 0 8px;
+      position: relative;
+      top: -4px;
+    }
+
+    .plan-value {
+      font-weight: 700;
+      white-space: nowrap;
+      font-size: 14px;
+    }
 
     .hero-bg { 
       background: linear-gradient(135deg, #0a2540 0%, #003366 100%); 
@@ -63,6 +116,45 @@
     p, li {
       line-height: var(--lexend-line-height);
     }
+
+    /* Estilos para el Acordeón de FAQ */
+    .faq-item {
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .faq-question {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+      text-align: left;
+      font-family: 'Lexend', sans-serif;
+      font-weight: 500;
+      color: #1e293b;
+      transition: color 0.3s;
+    }
+    .faq-question:hover {
+      color: #00d4ff;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      color: #64748b;
+      font-family: 'Lexend', sans-serif;
+      font-size: 14px;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 200px; /* Ajusta según el largo del texto */
+      padding-bottom: 20px;
+    }
+    .faq-icon {
+      transition: transform 0.3s;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800 leading-tight">
@@ -77,17 +169,17 @@
       </div>
     </div>
 
-    <h1 class="text-xl md:text-3xl font-semibold leading-tight mb-4">
+    <h1 class="text-xl md:text-2xl font-semibold leading-tight mb-2">
       OPORTUNIDAD DE GENERAR<br>INGRESOS EN AUTOMÁTICO
     </h1>
 
-    <p class="text-lg md:text-xl accent font-medium mb-3">Invierte con Akrocever</p>
+    <p class="text-lg md:text-xl accent font-medium mb-2">Invierte con Akrocever</p>
 
-    <div class="text-2xl md:text-3xl font-bold accent mb-3">GANA HASTA UN</div>
-    <div class="text-5xl md:text-6xl font-black text-white mb-3">50%</div>
-    <p class="text-lg md:text-xl mb-4">De utilidad en 30 días</p>
+    <div class="text-2xl md:text-3xl font-bold accent mb-2">GANA HASTA UN</div>
+    <div class="text-5xl md:text-6xl font-black text-white mb-2">50%</div>
+    <p class="text-lg md:text-xl mb-2">De utilidad en 30 días</p>
 
-    <div class="mt-4 bg-white text-black inline-block px-4 py-2 rounded-2xl text-base font-semibold shadow-xl">
+    <div class="mt-2 bg-white text-black inline-block px-2 py-2 rounded-2xl text-base font-semibold shadow-xl">
       Obtén el beneficio de generar ingresos pasivos $$.
     </div>
 
@@ -97,10 +189,10 @@
   <!-- 1. VINCULACIÓN EMPRESARIAL -->
   <section class="section-bg py-5">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="bg-[#003366] text-white py-3 px-10 rounded-3xl mx-auto mb-8 text-center">
-        <h2 class="text-2xl font-bold">PROYECTO</h2>
+      <div class="bg-[#003366] text-white py-3 px-10 rounded-2xl mx-auto mb-5 text-center">
+        <h2 class="text-xl font-bold">PROYECTO</h2>
       </div>
-      <h3 class="text-2xl font-semibold text-center mb-8">VINCULACIÓN EMPRESARIAL</h3>
+      <h3 class="text-xl font-semibold text-center mb-2">VINCULACIÓN EMPRESARIAL</h3>
       
       <div class="grid md:grid-cols-2 gap-7 items-center">
         <div class="text-base lexend-paragraph">
@@ -113,11 +205,50 @@
     </div>
   </section>
 
+  <section class="py-10 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="bg-white rounded-xl p-5 shadow-lg text-center border border-gray-100 flex flex-col justify-center">
+        <div class="flex justify-center mb-4">
+          <i class="fa-regular fa-user text-4xl text-black"></i>
+        </div>
+        <h4 class="text-gray-400 text-[10px] font-bold tracking-widest mb-4 uppercase">Usuarios Activos</h4>
+        <div class="text-6xl font-bold text-[#00d4ff] mb-4">7</div>
+        <p class="text-gray-500 text-sm font-medium">Inversionistas registrados</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-5 shadow-lg text-center border border-gray-100 flex flex-col justify-center">
+        <div class="flex justify-center mb-4">
+          <i class="fa-solid fa-earth-americas text-4xl text-black"></i>
+        </div>
+        <h4 class="text-gray-400 text-[10px] font-bold tracking-widest mb-4 uppercase">Presencia Internacional</h4>
+        <div class="space-y-3">
+          <p class="text-lg font-semibold flex items-center justify-center gap-2">
+            🇲🇽 México <span class="text-[#00d4ff] font-bold">(2)</span>
+          </p>
+          <p class="text-lg font-semibold flex items-center justify-center gap-2">
+            🇻🇪 Venezuela <span class="text-[#00d4ff] font-bold">(5)</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-5 shadow-lg text-center border border-gray-100 flex flex-col justify-center">
+        <div class="flex justify-center mb-4">
+          <i class="fa-regular fa-calendar-days text-4xl text-black"></i>
+        </div>
+        <h4 class="text-gray-400 text-[10px] font-bold tracking-widest mb-4 uppercase">Tiempo Operando</h4>
+        <div class="text-6xl font-bold text-[#00d4ff] mb-4">4</div>
+        <p class="text-gray-500 text-sm font-medium">Meses en operación</p>
+      </div>
+
+    </div>
+  </section>
+
   <!-- 2. ¿CÓMO FUNCIONA? -->
   <section class="py-5 bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center mb-10">¿CÓMO FUNCIONA?</h2>
-      <div class="grid md:grid-cols-2 gap-10 items-center">
+      <h2 class="text-xl font-bold text-center mb-5">¿CÓMO FUNCIONA?</h2>
+      <div class="grid md:grid-cols-2 gap-5 items-center">
         <div class="text-base lexend-paragraph">
           Este proyecto se basa en un sistema de colaboración con empresas en México que buscan atraer personal para sus vacantes. Trabajamos con un modelo innovador en el que nuestros colaboradores pueden participar como inversionistas dentro del proceso de difusión.
         </div>
@@ -131,14 +262,14 @@
   <!-- 3. ¿CÓMO EMPIEZAS A GANAR? -->
   <section class="section-bg py-5">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center mb-10">¿CÓMO EMPIEZAS A GANAR?</h2>
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <ul class="space-y-5 text-base lexend-paragraph">
-          <li class="flex items-start gap-4"><span class="text-emerald-500 text-2xl">•</span> Realizas una inversión.</li>
-          <li class="flex items-start gap-4"><span class="text-emerald-500 text-2xl">•</span> Monto mínimo: <strong>$25 USD</strong></li>
-          <li class="flex items-start gap-4"><span class="text-emerald-500 text-2xl">•</span> Se integra a un fondo de publicidad en Facebook.</li>
-          <li class="flex items-start gap-4"><span class="text-emerald-500 text-2xl">•</span> Resultados diarios.</li>
-          <li class="flex items-start gap-4"><span class="text-emerald-500 text-2xl">•</span> <strong>100% automatizado</strong>.</li>
+      <h2 class="text-xl font-bold text-center mb-5">¿CÓMO EMPIEZAS A GANAR?</h2>
+      <div class="grid md:grid-cols-2 gap-5 items-center">
+        <ul class="space-y-1 text-base lexend-normal">
+          <li class="flex items-start gap-2"><span class="text-emerald-500 text-2xl">•</span> Realizas una inversión.</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-500 text-2xl">•</span> Monto mínimo: <strong>$25 USD</strong></li>
+          <li class="flex items-start gap-2"><span class="text-emerald-500 text-2xl">•</span> Se integra a un fondo de publicidad en Facebook.</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-500 text-2xl">•</span> Resultados diarios.</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-500 text-2xl">•</span> <strong>100% automatizado</strong>.</li>
         </ul>
         <div class="image-container">
           <img src="https://i.ibb.co/rR3mJD00/Picsart-26-04-25-16-48-35-354.png" alt="Picsart-26-04-25-16-48-35-354" border="0">
@@ -148,39 +279,46 @@
   </section>
 
   <!-- 4. 3 PLANES DE INVERSIÓN -->
-  <section class="py-5 bg-white">
+  <section class="py-10 bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center mb-6">3 PLANES DE INVERSIÓN</h2>
+      <h2 class="text-xl font-bold text-center mb-5">3 PLANES DE INVERSIÓN</h2>
       <p class="text-center text-base text-gray-600 mb-10 lexend-paragraph">Al alcance de todos • Divisa: USD</p>
       
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white border border-cyan-400 rounded-3xl p-6 text-center">
-          <div class="text-4xl font-black mb-4 accent">$25</div>
-          <ul class="space-y-2 text-sm text-left lexend-paragraph">
-            <li><strong>50% Utilidad</strong></li>
-            <li>Rentabilidad diaria: <strong>$1.25</strong></li>
-            <li>30 días</li>
-            <li class="font-medium">Total: <span class="accent">$37.50 USD</span></li>
-          </ul>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="plan-card">
+          <div class="plan-header">PLAN $25.00 USD</div>
+          <div class="plan-body">
+            <div class="plan-row"><span class="plan-label">% de Utilidad</span><div class="plan-dots"></div><span class="plan-value">50%</span></div>
+            <div class="plan-row"><span class="plan-label">Rentabilidad diaria</span><div class="plan-dots"></div><span class="plan-value">$1.25 USD</span></div>
+            <div class="plan-row"><span class="plan-label">Periodo establecido</span><div class="plan-dots"></div><span class="plan-value">30 días</span></div>
+            <div class="plan-row"><span class="plan-label">Ganancia</span><div class="plan-dots"></div><span class="plan-value">$12.50 USD</span></div>
+            <div class="plan-row"><span class="plan-label">Total a recibir</span><div class="plan-dots"></div><span class="plan-value">$37.50 USD</span></div>
+          </div>
         </div>
-        <div class="bg-white border-2 border-cyan-500 rounded-3xl p-6 text-center scale-105">
-          <div class="text-4xl font-black mb-4 accent">$50</div>
-          <ul class="space-y-2 text-sm text-left lexend-paragraph">
-            <li><strong>50% Utilidad</strong></li>
-            <li>Rentabilidad diaria: <strong>$2.50</strong></li>
-            <li>30 días</li>
-            <li class="font-medium">Total: <span class="accent">$75.00 USD</span></li>
-          </ul>
+
+        <div class="plan-card">
+          <div class="plan-header">PLAN $50.00 USD</div>
+          <div class="plan-body">
+            <div class="plan-row"><span class="plan-label">% de Utilidad</span><div class="plan-dots"></div><span class="plan-value">50%</span></div>
+            <div class="plan-row"><span class="plan-label">Rentabilidad diaria</span><div class="plan-dots"></div><span class="plan-value">$2.50 USD</span></div>
+            <div class="plan-row"><span class="plan-label">Periodo establecido</span><div class="plan-dots"></div><span class="plan-value">30 días</span></div>
+            <div class="plan-row"><span class="plan-label">Ganancia</span><div class="plan-dots"></div><span class="plan-value">$25.00 USD</span></div>
+            <div class="plan-row"><span class="plan-label">Total a recibir</span><div class="plan-dots"></div><span class="plan-value">$75.00 USD</span></div>
+          </div>
         </div>
-        <div class="bg-white border border-cyan-400 rounded-3xl p-6 text-center">
-          <div class="text-4xl font-black mb-4 accent">$100</div>
-          <ul class="space-y-2 text-sm text-left lexend-paragraph">
-            <li><strong>50% Utilidad</strong></li>
-            <li>Rentabilidad diaria: <strong>$5.00</strong></li>
-            <li>30 días</li>
-            <li class="font-medium">Total: <span class="accent">$150.00 USD</span></li>
-          </ul>
+
+        <div class="plan-card">
+          <div class="plan-header">PLAN $100.00 USD</div>
+          <div class="plan-body">
+            <div class="plan-row"><span class="plan-label">% de Utilidad</span><div class="plan-dots"></div><span class="plan-value">50%</span></div>
+            <div class="plan-row"><span class="plan-label">Rentabilidad diaria</span><div class="plan-dots"></div><span class="plan-value">$5.00 USD</span></div>
+            <div class="plan-row"><span class="plan-label">Periodo establecido</span><div class="plan-dots"></div><span class="plan-value">30 días</span></div>
+            <div class="plan-row"><span class="plan-label">Ganancia</span><div class="plan-dots"></div><span class="plan-value">$50.00 USD</span></div>
+            <div class="plan-row"><span class="plan-label">Total a recibir</span><div class="plan-dots"></div><span class="plan-value">$150.00 USD</span></div>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -188,8 +326,8 @@
   <!-- 5. CÓMO RECIBES TUS GANANCIAS -->
   <section class="py-5 bg-gradient-to-r from-[#003366] to-[#00a8cc] text-white">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center mb-10">CÓMO RECIBES TUS GANANCIAS</h2>
-      <div class="grid md:grid-cols-2 gap-10 items-center">
+      <h2 class="text-xl font-bold text-center mb-5">CÓMO RECIBES TUS GANANCIAS</h2>
+      <div class="grid md:grid-cols-2 gap-5 items-center">
         <ul class="space-y-5 text-base lexend-paragraph">
           <li>• Pagos semanales los sábados vía Binance Pay</li>
           <li>• Liberación después de generar $25 USD de rendimiento</li>
@@ -205,9 +343,9 @@
   <!-- 6. OFICINA VIRTUAL -->
   <section class="py-5 bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center mb-10">OFICINA VIRTUAL</h2>
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div class="text-base lexend-paragraph">
+      <h2 class="text-xl font-bold text-center mb-5">OFICINA VIRTUAL</h2>
+      <div class="grid md:grid-cols-2 gap-5 items-center">
+        <div class="text-base lexend-normal">
           Este proyecto se basa en un sistema de colaboración con empresas en México que buscan atraer personal para sus vacantes. Trabajamos con un modelo innovador en el que nuestros colaboradores pueden participar como inversionistas dentro del proceso de difusión.
         </div>
         <div class="image-container">
@@ -217,12 +355,12 @@
     </div>
   </section>
 
-  <!-- 7. DESCRIPCIÓN DEL PROGRESO DE INVERSIÓN -->
+  <!-- 7. PROGRESO DE INVERSIÓN -->
   <section class="section-bg py-5">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center mb-12">DESCRIPCIÓN DEL PROGRESO DE INVERSIÓN</h2>
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="text-lg lexend-paragraph">
+    <div class="max-w-1xl mx-auto px-6">
+      <h2 class="text-xl font-bold text-center mb-5">PROGRESO DE INVERSIÓN</h2>
+      <div class="grid md:grid-cols-2 gap-5 items-center">
+        <div class="text-base lexend-normal">
           Tu inversión se destina a campañas de publicidad en Facebook, orientadas a la captación de candidatos interesados en vacantes laborales.<br><br>
           <strong>Etapas:</strong><br>
           Publicación y aprobación → Campaña en circulación → Recepción de candidatos → Entrevista → Agendamiento → Seguimiento → Cierre → Generación de ganancias.
@@ -237,9 +375,9 @@
   <!-- 8. SITIO WEB OPERATIVO DE EMPLEOS -->
   <section class="py-5 bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center mb-12">SITIO WEB OPERATIVO DE EMPLEOS</h2>
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="text-lg lexend-paragraph">
+      <h2 class="text-xl font-bold text-center mb-5">SITIO WEB OPERATIVO DE EMPLEOS</h2>
+      <div class="grid md:grid-cols-2 gap-5 items-center">
+        <div class="text-base lexend-paragraph">
           Nuestro sitio web de empleos recibe diariamente la visita de personas interesadas en oportunidades laborales, lo que garantiza una audiencia constante y segmentada.
         </div>
         <div class="image-container">
@@ -258,9 +396,9 @@
   <!-- 9. ¿POR QUÉ ESTE PROYECTO ES RENTABLE? -->
   <section class="section-bg py-5">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center mb-12">¿POR QUÉ ESTE PROYECTO ES RENTABLE?</h2>
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="text-lg lexend-paragraph">
+      <h2 class="text-xl font-bold text-center mb-5">¿POR QUÉ ESTE PROYECTO ES RENTABLE?</h2>
+      <div class="grid md:grid-cols-2 gap-5 items-center">
+        <div class="text-base lexend-paragraph">
           Por la alta demanda en el mercado laboral de la zona donde se encuentran ubicadas las empresas. Las campañas bien optimizadas generan todos los días:<br>
           • Solicitudes de empleo<br>
           • Firmas de contrato<br>
@@ -276,9 +414,9 @@
   <!-- 10. PROGRAMA DE REFERIDOS -->
   <section class="py-5 bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center mb-12">INGRESOS $$ EXTRA</h2>
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="text-lg lexend-paragraph">
+      <h2 class="text-xl font-bold text-center mb-5">INGRESOS $$ EXTRA</h2>
+      <div class="grid md:grid-cols-2 gap-5 items-center">
+        <div class="text-base lexend-paragraph">
           Genera un ingreso residual adicional por referir.<br><br>
           • Obtén hasta un 10% de comisión residual sobre el monto de las inversiones que realice tu invitado.<br>
           • Las ganancias se acreditan de inmediato a tu billetera de Binance.<br>
@@ -291,9 +429,73 @@
     </div>
   </section>
 
+        </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center mb-5">PREGUNTAS FRECUENTES</h2>
+      
+      <div class="space-y-2">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Es necesario trabajar o hacer actividades manuales?</span>
+            <i class="fa-solid fa-chevron-down faq-icon text-sm"></i>
+          </button>
+          <div class="faq-answer">
+            No. Tu participación se basa exclusivamente en colaborar mediante inversión para publicidad. Todo se gestiona de forma automatizada.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Cuánto puedo ganar?</span>
+            <i class="fa-solid fa-chevron-down faq-icon text-sm"></i>
+          </button>
+          <div class="faq-answer">
+            No hay límite de ganancias. Los ingresos que obtienes semanalmente se calculan con base en el monto que aportes.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Mis pagos son fijos?</span>
+            <i class="fa-solid fa-chevron-down faq-icon text-sm"></i>
+          </button>
+          <div class="faq-answer">
+            No ofrecemos rendimientos fijos. Los montos pueden variar según el comportamiento del mercado donde se trabaja mediante altas y bajas.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Se puede volver a invertír teniendo una inversión activa?</span>
+            <i class="fa-solid fa-chevron-down faq-icon text-sm"></i>
+          </button>
+          <div class="faq-answer">
+            Si. Puedes invertír las veces que desees. 
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Mi inversión tiene riesgo?</span>
+            <i class="fa-solid fa-chevron-down faq-icon text-sm"></i>
+          </button>
+          <div class="faq-answer">
+            Sí. Como toda inversión qué ofrece una rentabilidad muy alta, puede implicar riesgos.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Botón final -->
   <div class="py-12 bg-[#003366] text-center">
-    <a href="https://sites.google.com/view/akrocever/sistema" 
+    <a href="#quienes-somos" 
        class="inline-block bg-white text-[#003366] hover:bg-gray-100 font-bold text-xl px-14 py-5 rounded-3xl transition">
       QUIÉNES SOMOS
     </a>
@@ -306,6 +508,18 @@
       <p class="mt-2 opacity-75">Proyecto independiente impulsado por IA</p>
     </div>
   </footer>
+
+  <script>
+    function toggleFaq(element) {
+      const item = element.parentElement;
+      // Cerrar otros abiertos (opcional, si quieres que solo uno esté abierto a la vez)
+      document.querySelectorAll('.faq-item').forEach(el => {
+        if (el !== item) el.classList.remove('active');
+      });
+      // Abrir el actual
+      item.classList.toggle('active');
+    }
+  </script>
 
 </body>
   </html>
