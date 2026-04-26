@@ -503,25 +503,27 @@
     </a>
   </div>
 
-  <!-- Footer -->
-  <footer class="bg-[#003366] text-white py-10 text-center text-sm">
-    <div class="max-w-6xl mx-auto px-6">
-      <p>Akrocever © 2026 • Todos los derechos reservados</p>
-      <p class="mt-2 opacity-75">Proyecto independiente impulsado por IA</p>
-    </div>
-  </footer>
+<footer class="py-10 bg-[#003366] text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <p class="text-white text-xs mb-3 font-medium">
+      Akrocever 2026 todos los derechos reservados
+    </p>
 
-  <script>
-    function toggleFaq(element) {
-      const item = element.parentElement;
-      // Cerrar otros abiertos (opcional, si quieres que solo uno esté abierto a la vez)
-      document.querySelectorAll('.faq-item').forEach(el => {
-        if (el !== item) el.classList.remove('active');
-      });
-      // Abrir el actual
-      item.classList.toggle('active');
-    }
-  </script>
+    <div class="flex justify-center flex-wrap gap-4 text-[10px] uppercase tracking-wider font-bold">
+      <a href="#" class="text-white hover:underline">
+        Aviso de Privacidad
+      </a>
+      <span class="text-white/50">|</span>
+      <a href="#" class="text-white hover:underline">
+        Términos y condiciones
+      </a>
+      <span class="text-white/50">|</span>
+      <a href="#" class="text-white hover:underline">
+        Aviso legal
+      </a>
+    </div>
+  </div>
+</footer>
 
 </body>
   </html>
