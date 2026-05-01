@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akrocever | Ingresos Automatizados en USD</title>
   
-  <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&amp;family=Lexend:wght@300;400;500&amp;display=swap" rel="stylesheet">
   
   <script src="https://cdn.tailwindcss.com"></script>
@@ -132,6 +131,9 @@
       font-weight: 500;
       color: #1e293b;
       transition: color 0.3s;
+      background: transparent;
+      border: none;
+      cursor: pointer;
     }
     .faq-question:hover {
       color: #00d4ff;
@@ -139,13 +141,13 @@
     .faq-answer {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.3s ease-out;
+      transition: max-height 0.3s ease-out, padding 0.3s ease;
       color: #64748b;
       font-family: 'Lexend', sans-serif;
       font-size: 14px;
     }
     .faq-item.active .faq-answer {
-      max-height: 200px; /* Ajusta según el largo del texto */
+      max-height: 500px; /* Ajustado para que no se corte el texto */
       padding-bottom: 20px;
     }
     .faq-icon {
@@ -159,13 +161,12 @@
 </head>
 <body class="bg-gray-50 text-gray-800 leading-tight">
 
-  <!-- HERO / PORTADA -->
-<section class="hero-bg text-white py-5 md:py-5">
+  <section class="hero-bg text-white py-5 md:py-5">
   <div class="max-w-6xl mx-auto px-6 text-center">
 
     <div class="flex justify-center mb-4">
       <div class="w-20 h-20 bg-white rounded-2x1 flex items-center justify-center shadow-2xl overflow-hidden">
-        <img src="https://i.ibb.co/k6s5kSq0/Picsart-26-01-16-21-27-05-106.jpg" alt="Picsart-26-01-16-21-27-05-106" border="0"></a>
+        <img src="https://i.ibb.co/k6s5kSq0/Picsart-26-01-16-21-27-05-106.jpg" alt="Logo Akrocever" border="0">
       </div>
     </div>
 
@@ -186,7 +187,6 @@
   </div>
 </section>
 
-  <!-- 1. VINCULACIÓN EMPRESARIAL -->
   <section class="section-bg py-5">
     <div class="max-w-6xl mx-auto px-6">
       <div class="bg-[#003366] text-white py-3 px-10 rounded-2xl mx-auto mb-5 text-center">
@@ -199,7 +199,7 @@
           Desarrollo y gestión de operaciones dentro del mercado laboral en México, optimizando procesos de promoción y alcance.
         </div>
         <div class="image-container">
-          <img src="https://i.ibb.co/xtHZmDJ3/Picsart-26-04-25-15-26-43-050.jpg" alt="Picsart-26-04-25-15-26-43-050" border="0"></a>
+          <img src="https://i.ibb.co/xtHZmDJ3/Picsart-26-04-25-15-26-43-050.jpg" alt="Imagen Proyecto" border="0">
         </div>
       </div>
     </div>
@@ -247,7 +247,6 @@
     </div>
   </section>
 
-  <!-- 2. ¿CÓMO FUNCIONA? -->
   <section class="py-5 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-xl font-bold text-center mb-5">¿CÓMO FUNCIONA?</h2>
@@ -256,13 +255,12 @@
           Este proyecto se basa en un sistema de colaboración con empresas en México que buscan atraer personal para sus vacantes. Trabajamos con un modelo innovador en el que nuestros colaboradores pueden participar como inversionistas dentro del proceso de difusión.
         </div>
         <div class="image-container">
-          <img src="https://i.ibb.co/Ngqcmrqd/Picsart-26-03-09-18-42-49-312.png" alt="Picsart-26-03-09-18-42-49-312" border="0"></a>
+          <img src="https://i.ibb.co/Ngqcmrqd/Picsart-26-03-09-18-42-49-312.png" alt="Funcionamiento" border="0">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3. ¿CÓMO EMPIEZAS A GANAR? -->
   <section class="section-bg py-5">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-xl font-bold text-center mb-5">¿CÓMO EMPIEZAS A GANAR?</h2>
@@ -275,58 +273,56 @@
           <li class="flex items-start gap-2"><span class="text-emerald-500 text-2xl">•</span> <strong>100% automatizado</strong>.</li>
         </ul>
         <div class="image-container">
-          <img src="https://i.ibb.co/rR3mJD00/Picsart-26-04-25-16-48-35-354.png" alt="Picsart-26-04-25-16-48-35-354" border="0">
+          <img src="https://i.ibb.co/rR3mJD00/Picsart-26-04-25-16-48-35-354.png" alt="Inicio" border="0">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4. 3 PLANES DE INVERSIÓN -->
-  <section class="py-10 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-xl font-bold text-center mb-5">3 PLANES DE INVERSIÓN</h2>
-      <p class="text-center text-base text-gray-600 mb-10 lexend-paragraph">Al alcance de todos • Divisa: USD</p>
+<section class="py-10 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-xl font-bold text-center mb-5">3 PLANES DE INVERSIÓN</h2>
+    <p class="text-center text-base text-gray-600 mb-10 lexend-paragraph">Al alcance de todos • Divisa: USD</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center items-start">
       
-      <div class="grid md:grid-cols-3 gap-8">
-        
-        <div class="plan-card">
-          <div class="plan-header">PLAN $25.00 USD</div>
-          <div class="plan-body">
-            <div class="plan-row"><span class="plan-label">% de Utilidad</span><div class="plan-dots"></div><span class="plan-value">50%</span></div>
-            <div class="plan-row"><span class="plan-label">Rentabilidad</span><div class="plan-dots"></div><span class="plan-value">$1.25 USD</span></div>
-            <div class="plan-row"><span class="plan-label">Periodo establecido</span><div class="plan-dots"></div><span class="plan-value">Aprox. 30/60 días</span></div>
-            <div class="plan-row"><span class="plan-label">Ganancia</span><div class="plan-dots"></div><span class="plan-value">$12.50 USD</span></div>
-            <div class="plan-row"><span class="plan-label">Total a recibir</span><div class="plan-dots"></div><span class="plan-value">$37.50 USD</span></div>
-          </div>
+      <div class="plan-card w-full">
+        <div class="plan-header">PLAN $25.00 USD</div>
+        <div class="plan-body">
+          <div class="plan-row"><span class="plan-label">% de Utilidad</span><div class="plan-dots"></div><span class="plan-value">50%</span></div>
+          <div class="plan-row"><span class="plan-label">Rentabilidad</span><div class="plan-dots"></div><span class="plan-value">$1.25 USD</span></div>
+          <div class="plan-row"><span class="plan-label">Periodo</span><div class="plan-dots"></div><span class="plan-value">Aprox. 30/60 días</span></div>
+          <div class="plan-row"><span class="plan-label">Ganancia</span><div class="plan-dots"></div><span class="plan-value">$12.50 USD</span></div>
+          <div class="plan-row"><span class="plan-label">Total a recibir</span><div class="plan-dots"></div><span class="plan-value">$37.50 USD</span></div>
         </div>
-
-        <div class="plan-card">
-          <div class="plan-header">PLAN $50.00 USD</div>
-          <div class="plan-body">
-            <div class="plan-row"><span class="plan-label">% de Utilidad</span><div class="plan-dots"></div><span class="plan-value">50%</span></div>
-            <div class="plan-row"><span class="plan-label">Rentabilidad</span><div class="plan-dots"></div><span class="plan-value">$2.50 USD</span></div>
-            <div class="plan-row"><span class="plan-label">Periodo establecido</span><div class="plan-dots"></div><span class="plan-value">Aprox. 30/60 días</span></div>
-            <div class="plan-row"><span class="plan-label">Ganancia</span><div class="plan-dots"></div><span class="plan-value">$25.00 USD</span></div>
-            <div class="plan-row"><span class="plan-label">Total a recibir</span><div class="plan-dots"></div><span class="plan-value">$75.00 USD</span></div>
-          </div>
-        </div>
-
-        <div class="plan-card">
-          <div class="plan-header">PLAN $100.00 USD</div>
-          <div class="plan-body">
-            <div class="plan-row"><span class="plan-label">% de Utilidad</span><div class="plan-dots"></div><span class="plan-value">50%</span></div>
-            <div class="plan-row"><span class="plan-label">Rentabilidad</span><div class="plan-dots"></div><span class="plan-value">$5.00 USD</span></div>
-            <div class="plan-row"><span class="plan-label">Periodo establecido</span><div class="plan-dots"></div><span class="plan-value">Aprox. 30/60 días</span></div>
-            <div class="plan-row"><span class="plan-label">Ganancia</span><div class="plan-dots"></div><span class="plan-value">$50.00 USD</span></div>
-            <div class="plan-row"><span class="plan-label">Total a recibir</span><div class="plan-dots"></div><span class="plan-value">$150.00 USD</span></div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
 
-  <!-- 5. CÓMO RECIBES TUS GANANCIAS -->
+      <div class="plan-card w-full">
+        <div class="plan-header">PLAN $50.00 USD</div>
+        <div class="plan-body">
+          <div class="plan-row"><span class="plan-label">% de Utilidad</span><div class="plan-dots"></div><span class="plan-value">50%</span></div>
+          <div class="plan-row"><span class="plan-label">Rentabilidad</span><div class="plan-dots"></div><span class="plan-value">$2.50 USD</span></div>
+          <div class="plan-row"><span class="plan-label">Periodo</span><div class="plan-dots"></div><span class="plan-value">Aprox. 30/60 días</span></div>
+          <div class="plan-row"><span class="plan-label">Ganancia</span><div class="plan-dots"></div><span class="plan-value">$25.00 USD</span></div>
+          <div class="plan-row"><span class="plan-label">Total a recibir</span><div class="plan-dots"></div><span class="plan-value">$75.00 USD</span></div>
+        </div>
+      </div>
+
+      <div class="plan-card w-full">
+        <div class="plan-header">PLAN $100.00 USD</div>
+        <div class="plan-body">
+          <div class="plan-row"><span class="plan-label">% de Utilidad</span><div class="plan-dots"></div><span class="plan-value">50%</span></div>
+          <div class="plan-row"><span class="plan-label">Rentabilidad</span><div class="plan-dots"></div><span class="plan-value">$5.00 USD</span></div>
+          <div class="plan-row"><span class="plan-label">Periodo</span><div class="plan-dots"></div><span class="plan-value">Aprox. 30/60 días</span></div>
+          <div class="plan-row"><span class="plan-label">Ganancia</span><div class="plan-dots"></div><span class="plan-value">$50.00 USD</span></div>
+          <div class="plan-row"><span class="plan-label">Total a recibir</span><div class="plan-dots"></div><span class="plan-value">$150.00 USD</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
   <section class="py-5 bg-gradient-to-r from-[#003366] to-[#00a8cc] text-white">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-xl font-bold text-center mb-5">CÓMO RECIBES TUS GANANCIAS</h2>
@@ -336,13 +332,12 @@
           <li>• Liberación de pagos después de generar $25 USD de rendimiento, esto se debe que apartir de ese punto, la inversión entra en su fase operativa permitiendo la generación y distribución de rendimientos de manera continua.</li>
         </ul>
         <div class="image-container">
-          <img src="https://i.ibb.co/v6x5kngY/Picsart-26-04-25-17-10-23-888.png" alt="Picsart-26-04-25-17-10-23-888" border="0"></a>
+          <img src="https://i.ibb.co/v6x5kngY/Picsart-26-04-25-17-10-23-888.png" alt="Ganancias" border="0">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 6. OFICINA VIRTUAL -->
   <section class="py-5 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-xl font-bold text-center mb-5">OFICINA VIRTUAL</h2>
@@ -351,13 +346,12 @@
           Para tu registro es solamente en esta Aplicación, tienes acceso a una oficina virtual donde podrás visualizar el control de tus ganancias y el progreso de tus inversiones en tiempo real.
         </div>
         <div class="image-container">
-          <img src="https://i.ibb.co/Q7FCxbJL/Picsart-26-04-25-17-18-40-442.jpg" alt="Picsart-26-04-25-17-18-40-442" border="0"></a>
+          <img src="https://i.ibb.co/Q7FCxbJL/Picsart-26-04-25-17-18-40-442.jpg" alt="Oficina" border="0">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 7. PROGRESO DE INVERSIÓN -->
   <section class="section-bg py-5">
     <div class="max-w-1xl mx-auto px-6">
       <h2 class="text-xl font-bold text-center mb-5">PROGRESO DE INVERSIÓN</h2>
@@ -368,13 +362,12 @@
           Publicación y aprobación → Campaña en circulación → Recepción de candidatos → Entrevista → Agendamiento → Seguimiento → Cierre → Generación de ganancias.
         </div>
         <div class="image-container">
-          <img src="https://i.ibb.co/PG6p6QkF/3e7181d171384018ad3f8a6d8b364593.gif" alt="3e7181d171384018ad3f8a6d8b364593" border="0"></a>
+          <img src="https://i.ibb.co/PG6p6QkF/3e7181d171384018ad3f8a6d8b364593.gif" alt="Progreso" border="0">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 8. SITIO WEB OPERATIVO DE EMPLEOS -->
   <section class="py-5 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-xl font-bold text-center mb-5">SITIO WEB OPERATIVO DE EMPLEOS</h2>
@@ -385,7 +378,7 @@
           • Generación constante de tráfico por campañas publicitarias.
         </div>
         <div class="image-container">
-          <img src="https://i.ibb.co/0VFyvLG6/Picsart-26-04-25-17-35-40-771.jpg" alt="Picsart-26-04-25-17-35-40-771" border="0"></a>
+          <img src="https://i.ibb.co/0VFyvLG6/Picsart-26-04-25-17-35-40-771.jpg" alt="Sitio" border="0">
         </div>
       </div>
       <div class="text-center mt-10">
@@ -397,7 +390,6 @@
     </div>
   </section>
 
-  <!-- 9. ¿POR QUÉ ESTE PROYECTO ES RENTABLE? -->
   <section class="section-bg py-5">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-xl font-bold text-center mb-5">¿POR QUÉ ESTE PROYECTO ES RENTABLE?</h2>
@@ -408,15 +400,14 @@
           • Firmas de contrato<br>
           • Resultados medibles<br>
           Esto permite un flujo continuo dentro del sistema. Lo que hace posible ofrecer rendimientos semanales a nuestros colaboradores.
-        </div
+        </div>
         <div class="image-container">
-          <img src="https://i.ibb.co/rGtqDNX7/Picsart-26-04-25-17-47-31-851.jpg" alt="Picsart-26-04-25-17-47-31-851" border="0"></a>
+          <img src="https://i.ibb.co/rGtqDNX7/Picsart-26-04-25-17-47-31-851.jpg" alt="Rentabilidad" border="0">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 10. PROGRAMA DE REFERIDOS -->
   <section class="py-5 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-xl font-bold text-center mb-5">INGRESOS $$ EXTRA</h2>
@@ -428,13 +419,7 @@
           • Recomendar es opcional, No es necesario invitar a otros para poder recibir tus ganancias.
         </div>
         <div class="image-container">
-          <img src="https://i.ibb.co/8DkLXRb7/Picsart-26-04-25-17-55-07-210.png" alt="Picsart-26-04-25-17-55-07-210" border="0"></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-        </ul>
+          <img src="https://i.ibb.co/8DkLXRb7/Picsart-26-04-25-17-55-07-210.png" alt="Referidos" border="0">
         </div>
       </div>
     </div>
@@ -520,7 +505,6 @@
     </div>
     </section>
 
-  <!-- Botón final -->
   <div class="py-12 bg-[#003366] text-center">
     <a href="https://sites.google.com/view/akrocever/sistema" 
        class="inline-block bg-white text-[#003366] hover:bg-gray-100 font-bold text-xl px-14 py-5 rounded-3xl transition">
@@ -550,5 +534,22 @@
   </div>
 </footer>
 
+<script>
+  function toggleFaq(button) {
+    const item = button.parentElement;
+    
+    // Cerrar otros abiertos para efecto acordeón
+    document.querySelectorAll('.faq-item').forEach(otherItem => {
+      if (otherItem !== item) {
+        otherItem.classList.remove('active');
+      }
+    });
+
+    // Abrir o cerrar el actual
+    item.classList.toggle('active');
+  }
+</script>
+
 </body>
-  </html>
+</html>
+
